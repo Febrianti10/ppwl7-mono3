@@ -21,6 +21,7 @@
     "@prisma/adapter-libsql": "^6.19.2",
     "@prisma/client": "^6.19.2",
     "googleapis": "^144.0.0",
+    "@libsql/linux-x64-gnu": "*",
     "shared": "workspace:*"
   },
   "devDependencies": {
