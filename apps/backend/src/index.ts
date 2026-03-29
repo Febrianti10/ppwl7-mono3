@@ -96,6 +96,9 @@ const app = new Elysia()
       if (session) {
         session.value = sessionId;
         session.maxAge = 60 * 60 * 24;
+        session.httpOnly = true;
+        session.secure = true;
+        session.sameSite = "none";
       }
 
       // 4. Modifikasi Redirect (Ambil dari ENV)
