@@ -18,14 +18,13 @@
     "@elysiajs/cors": "^1.2.3",
     "@elysiajs/swagger": "^1.2.2",
     "@elysiajs/cookie": "^0.8.0",
-    "@prisma/adapter-libsql": "^6.19.2",
-    "@prisma/client": "^6.19.2",
+    "@prisma/adapter-libsql": "5.22.0",
+    "@prisma/client": "5.22.0",
     "googleapis": "^144.0.0",
-    "@libsql/linux-x64-gnu": "*",
     "shared": "workspace:*"
   },
   "devDependencies": {
-    "prisma": "^6.19.2",
+    "prisma": "5.22.0",
     "tsdown": "^0.21.5",
     "typescript": "^5.0.0"
   }

@@ -1,7 +1,7 @@
-import { PrismaLibSQL } from "@prisma/adapter-libsql";
+import { PrismaLibSql } from "@prisma/adapter-libsql";
 import { PrismaClient } from "../src/generated/prisma/client";
 
-const adapter = new PrismaLibSQL({
+const adapter = new PrismaLibSql({
   url: process.env.DATABASE_URL!,
   authToken: process.env.DB_AUTH_TOKEN,
 });
