@@ -7,6 +7,7 @@ export default defineConfig({
       "@prisma/adapter-libsql",
       "@libsql/client",
       "@libsql/core",
+      "@libsql/linux-x64-gnu",
     ],
   },
 });
