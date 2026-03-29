@@ -1,5 +1,11 @@
-import { PrismaClient } from "../src/generated/prisma/client";
 import { PrismaLibSql } from "@prisma/adapter-libsql";
+import { PrismaClient } from "../src/generated/prisma/client";
 
-const adapter = new PrismaLibSql({ url: process.env.DATABASE_URL || "file:./dev.db" });
+// Konfigurasi adapter agar Prisma bisa "ngobrol" dengan Turso
+const adapter = new PrismaLibSql({
+  url: process.env.DATABASE_URL!,
+  authToken: process.env.DB_AUTH_TOKEN,
+});
+
+// Export prisma agar bisa dipakai di file index.ts atau seeder
 export const prisma = new PrismaClient({ adapter });
